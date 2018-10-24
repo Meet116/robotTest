@@ -1,0 +1,54 @@
+1540380973512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DELLLA~1\\AppData\\Local\\Temp\\rust_mozprofile.GcnmSbqzrOM1"
+1540380976054	Marionette	INFO	Listening on port 59871
+1540380976239	Marionette	WARN	TLS certificate errors will be ignored for this session
+1540380976302	Marionette	DEBUG	[6442450945] Frame script loaded
+1540380976306	Marionette	DEBUG	[6442450945] Frame script registered
+1540380976341	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for about:blank
+1540380977429	Marionette	DEBUG	[6442450945] Received DOM event pagehide for about:blank
+1540380987181	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://staging.ecarevault.com/#/ecare-vault/login
+1540380988843	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://staging.ecarevault.com/#/ecare-vault/login
+1540380992802	Marionette	DEBUG	[6442450945] Canceled page load listener because no navigation has been detected
+1540380992833	Marionette	DEBUG	[6442450955] Frame script loaded
+1540380992834	Marionette	DEBUG	[6442450955] Frame script registered
+1540380994479	Marionette	DEBUG	[6442450955] Canceled page load listener because no navigation has been detected
+1540380995799	Marionette	DEBUG	[6442450955] Received DOM event beforeunload for https://accounts.google.com/signin/v2/challenge/pwd?client_id=509750901575-9du0o8no6hjtm28jp48qeci77r588sk7.apps.googleuserco ... P4MggaRFOZ-mvJZ_dR-EuOS88hyMOLcxTfkfhwvLXcQfcTRGxXudIcNY18DqZvNrdi4_OboZNRKzK-W4W9sKGTyOKbc&cid=1&navigationDirection=forward
+1540380996428	Marionette	DEBUG	[6442450955] Received DOM event beforeunload for https://accounts.google.com/signin/v2/challenge/pwd?client_id=509750901575-9du0o8no6hjtm28jp48qeci77r588sk7.apps.googleuserco ... P4MggaRFOZ-mvJZ_dR-EuOS88hyMOLcxTfkfhwvLXcQfcTRGxXudIcNY18DqZvNrdi4_OboZNRKzK-W4W9sKGTyOKbc&cid=1&navigationDirection=forward
+1540380997035	Marionette	DEBUG	[6442450955] Received DOM event pagehide for https://accounts.google.com/signin/v2/challenge/pwd?client_id=509750901575-9du0o8no6hjtm28jp48qeci77r588sk7.apps.googleuserco ... P4MggaRFOZ-mvJZ_dR-EuOS88hyMOLcxTfkfhwvLXcQfcTRGxXudIcNY18DqZvNrdi4_OboZNRKzK-W4W9sKGTyOKbc&cid=1&navigationDirection=forward
+1540380997036	Marionette	DEBUG	[6442450955] Received DOM event unload for https://accounts.google.com/signin/v2/challenge/pwd?client_id=509750901575-9du0o8no6hjtm28jp48qeci77r588sk7.apps.googleuserco ... P4MggaRFOZ-mvJZ_dR-EuOS88hyMOLcxTfkfhwvLXcQfcTRGxXudIcNY18DqZvNrdi4_OboZNRKzK-W4W9sKGTyOKbc&cid=1&navigationDirection=forward
+1540380997050	Marionette	DEBUG	[6442450955] Received DOM event beforeunload for https://accounts.google.co.in/accounts/SetSID
+1540380997052	Marionette	DEBUG	[6442450955] Received DOM event pageshow for https://accounts.google.co.in/accounts/SetSID
+1540380997076	Marionette	DEBUG	[6442450955] Received DOM event DOMContentLoaded for https://accounts.google.co.in/accounts/SetSID
+1540380997087	Marionette	DEBUG	[6442450955] Received observer notification outer-window-destroyed for 6442450960
+1540380997466	Marionette	DEBUG	[6442450955] Received DOM event unload for https://accounts.google.co.in/accounts/SetSID
+1540380997535	Marionette	DEBUG	[6442450955] Received DOM event DOMContentLoaded for https://accounts.google.com/signin/oauth/consent?authuser=0&part=AJi8hAMOpgntAZQVNQvLmGXaBUcdy4VaZJyPIofFLNBjp0ak0wbOVEk8Njzc ... oIeOyJJ4p5D19VAY4j6VI-OLOudBq6iu28fM2O0HKJqQ1_900MB15YaGfxKPtuyxq3GSozgfGqFHW_ECh_SY7bC3Jd-oIMtRh_d&as=y6OS8qf1ix984r72sGXKsA
+1540380997899	Marionette	DEBUG	[6442450955] Received DOM event pageshow for https://accounts.google.com/signin/oauth/consent?authuser=0&part=AJi8hAMOpgntAZQVNQvLmGXaBUcdy4VaZJyPIofFLNBjp0ak0wbOVEk8Njzc ... oIeOyJJ4p5D19VAY4j6VI-OLOudBq6iu28fM2O0HKJqQ1_900MB15YaGfxKPtuyxq3GSozgfGqFHW_ECh_SY7bC3Jd-oIMtRh_d&as=y6OS8qf1ix984r72sGXKsA
+1540381003869	Marionette	INFO	Stopped listening on port 59871
+[Parent 6992, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 6992, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7224, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7224, Chrome_ChildThread[Parent 6992, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 13440, 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ild][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 828, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19400, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 19400,[GPU 20344, Chrome_ChildTh
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+g_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 18112, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 13412, Chrome_Child
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

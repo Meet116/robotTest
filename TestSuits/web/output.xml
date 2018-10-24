@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181024 17:04:57.950" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="E:\eCareVaultAutomation\TestSuits\web\eCareVaultLogin.robot" id="s1" name="eCareVaultLogin">
+<test id="s1-t1" name="eCareVaultLoginSuccess">
+<kw name="Given User opens eCareVault Login Page" library="loginKeywords">
+<kw name="Open eCareVault Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181024 17:04:58.367" level="INFO">Opening browser 'firefox' to base url 'http://staging.ecarevault.com/#/ecare-vault/login'.</msg>
+<status status="PASS" endtime="20181024 17:05:34.638" starttime="20181024 17:04:58.365"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181024 17:05:38.146" starttime="20181024 17:05:34.639"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:38.146" starttime="20181024 17:05:38.146"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>eCareVault</arg>
+</arguments>
+<msg timestamp="20181024 17:05:38.149" level="INFO">Page title is 'eCareVault'.</msg>
+<status status="PASS" endtime="20181024 17:05:38.150" starttime="20181024 17:05:38.147"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.150" starttime="20181024 17:05:38.146"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.150" starttime="20181024 17:04:58.365"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.150" starttime="20181024 17:04:58.364"></status>
+</kw>
+<kw name="When user &quot;${USERNAME}&quot; logs in" library="loginKeywords">
+<kw name="Enter username" library="loginKeywords">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>ecv-email-default</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:38.152" level="INFO">Typing text 'sagar@jeavio.com' into text field 'ecv-email-default'.</msg>
+<status status="PASS" endtime="20181024 17:05:38.241" starttime="20181024 17:05:38.152"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.241" starttime="20181024 17:05:38.151"></status>
+</kw>
+<kw name="Click Submit &quot;${USERNAME_SUBMIT_BUTTON}&quot;" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${username_submit_button}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:38.244" level="INFO">Double clicking element 'xpath://*[@id="login-container"]/div[3]/div[4]/div/div/button'.</msg>
+<status status="PASS" endtime="20181024 17:05:38.559" starttime="20181024 17:05:38.243"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:38.564" starttime="20181024 17:05:38.559"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.564" starttime="20181024 17:05:38.242"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.564" starttime="20181024 17:05:38.151"></status>
+</kw>
+<kw name="And user waits to load page" library="loginKeywords">
+<kw name="Wait for page to load" library="resource">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:38.568" starttime="20181024 17:05:38.565"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.568" starttime="20181024 17:05:38.565"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:38.569" starttime="20181024 17:05:38.565"></status>
+</kw>
+<kw name="And User scroll down to element &quot;${PASSWORD_FIELD}&quot;" library="loginKeywords">
+<kw name="scroll down to Element ${password_field}" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:39.508" starttime="20181024 17:05:38.570"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:39.782" starttime="20181024 17:05:39.509"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:39.782" starttime="20181024 17:05:38.570"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:39.782" starttime="20181024 17:05:38.569"></status>
+</kw>
+<kw name="And user enter password &quot;${PASSWORD}&quot;" library="loginKeywords">
+<kw name="Enter Password" library="loginKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:39.784" level="INFO">Typing password into text field 'id:ecv-login-password'.</msg>
+<status status="PASS" endtime="20181024 17:05:39.849" starttime="20181024 17:05:39.783"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:39.849" starttime="20181024 17:05:39.783"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:39.849" starttime="20181024 17:05:39.783"></status>
+</kw>
+<kw name="And user click signin" library="loginKeywords">
+<kw name="Click Signin" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGNIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:39.851" level="INFO">Double clicking element 'xpath://*[@id="login-container"]/div[3]/div[5]/div/div[3]/div/button'.</msg>
+<status status="PASS" endtime="20181024 17:05:40.149" starttime="20181024 17:05:39.851"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:40.154" starttime="20181024 17:05:40.149"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:40.154" starttime="20181024 17:05:39.850"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:40.154" starttime="20181024 17:05:39.850"></status>
+</kw>
+<kw name="And user enter vault key &quot;${VAULTKEY}&quot;" library="loginKeywords">
+<kw name="Enter Vault" library="loginKeywords">
+<arguments>
+<arg>${vaultKey}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${VAULTKEY_FIELD}</arg>
+<arg>${vaultKey}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:40.156" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" endtime="20181024 17:05:45.006" starttime="20181024 17:05:40.155"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:45.006" starttime="20181024 17:05:40.155"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:45.006" starttime="20181024 17:05:40.155"></status>
+</kw>
+<kw name="And user click on submit" library="loginKeywords">
+<kw name="Click Submit vault" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${VAULTKEY_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:45.009" level="INFO">Double clicking element 'id:submit'.</msg>
+<status status="PASS" endtime="20181024 17:05:45.922" starttime="20181024 17:05:45.009"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>90 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:05:45.927" starttime="20181024 17:05:45.923"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:45.928" starttime="20181024 17:05:45.008"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:05:45.928" starttime="20181024 17:05:45.007"></status>
+</kw>
+<kw name="Then user name &quot;SK&quot; should be displayed" library="loginKeywords">
+<kw name="Check element ${usernameOnDashboard} should contain text ${textValue}" library="resource">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${textValue}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181024 17:05:46.259" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181024 17:05:46.259" starttime="20181024 17:05:45.981"></status>
+</kw>
+<msg timestamp="20181024 17:05:46.261" level="FAIL">Element 'xpath://*[@id="step4_container"]/a/span/div' should have contained text 'SK' but its text was 'SAGAR KARATHIYA'.</msg>
+<status status="FAIL" endtime="20181024 17:05:46.261" starttime="20181024 17:05:45.932"></status>
+</kw>
+<status status="FAIL" endtime="20181024 17:05:46.262" starttime="20181024 17:05:45.931"></status>
+</kw>
+<status status="FAIL" endtime="20181024 17:05:46.263" starttime="20181024 17:05:45.930"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181024 17:05:47.472" starttime="20181024 17:05:46.264"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+<tag>sanity</tag>
+<tag>smoke</tag>
+</tags>
+<status status="FAIL" endtime="20181024 17:05:47.473" critical="yes" starttime="20181024 17:04:58.363">Element 'xpath://*[@id="step4_container"]/a/span/div' should have contained text 'SK' but its text was 'SAGAR KARATHIYA'.</status>
+</test>
+<test id="s1-t2" name="eCareVaultLoginFailureWrongPassword">
+<kw name="Given User opens eCareVault Login Page" library="loginKeywords">
+<kw name="Open eCareVault Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181024 17:05:47.477" level="INFO">Opening browser 'firefox' to base url 'http://staging.ecarevault.com/#/ecare-vault/login'.</msg>
+<status status="PASS" endtime="20181024 17:06:03.120" starttime="20181024 17:05:47.477"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181024 17:06:06.632" starttime="20181024 17:06:03.120"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:06.633" starttime="20181024 17:06:06.632"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>eCareVault</arg>
+</arguments>
+<msg timestamp="20181024 17:06:06.637" level="INFO">Page title is 'eCareVault'.</msg>
+<status status="PASS" endtime="20181024 17:06:06.638" starttime="20181024 17:06:06.634"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:06.638" starttime="20181024 17:06:06.633"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:06.638" starttime="20181024 17:05:47.477"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:06.638" starttime="20181024 17:05:47.476"></status>
+</kw>
+<kw name="When user &quot;${USERNAME}&quot; logs in" library="loginKeywords">
+<kw name="Enter username" library="loginKeywords">
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>ecv-email-default</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:06.640" level="INFO">Typing text 'sagar@jeavio.com' into text field 'ecv-email-default'.</msg>
+<status status="PASS" endtime="20181024 17:06:06.737" starttime="20181024 17:06:06.640"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:06.737" starttime="20181024 17:06:06.639"></status>
+</kw>
+<kw name="Click Submit &quot;${USERNAME_SUBMIT_BUTTON}&quot;" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${username_submit_button}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:06.739" level="INFO">Double clicking element 'xpath://*[@id="login-container"]/div[3]/div[4]/div/div/button'.</msg>
+<status status="PASS" endtime="20181024 17:06:07.063" starttime="20181024 17:06:06.738"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:07.068" starttime="20181024 17:06:07.063"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:07.069" starttime="20181024 17:06:06.738"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:07.069" starttime="20181024 17:06:06.639"></status>
+</kw>
+<kw name="And user waits to load page" library="loginKeywords">
+<kw name="Wait for page to load" library="resource">
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:07.074" starttime="20181024 17:06:07.071"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:07.074" starttime="20181024 17:06:07.070"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:07.074" starttime="20181024 17:06:07.070"></status>
+</kw>
+<kw name="And User scroll down to element &quot;${PASSWORD_FIELD}&quot;" library="loginKeywords">
+<kw name="scroll down to Element ${password_field}" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:08.228" starttime="20181024 17:06:07.078"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:08.499" starttime="20181024 17:06:08.229"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.500" starttime="20181024 17:06:07.076"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.500" starttime="20181024 17:06:07.075"></status>
+</kw>
+<kw name="And user enter password &quot;password&quot;" library="loginKeywords">
+<kw name="Enter Password" library="loginKeywords">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:08.502" level="INFO">Typing password into text field 'id:ecv-login-password'.</msg>
+<status status="PASS" endtime="20181024 17:06:08.556" starttime="20181024 17:06:08.501"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.556" starttime="20181024 17:06:08.501"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.557" starttime="20181024 17:06:08.500"></status>
+</kw>
+<kw name="And user click signin" library="loginKeywords">
+<kw name="Click Signin" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGNIN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:08.563" level="INFO">Double clicking element 'xpath://*[@id="login-container"]/div[3]/div[5]/div/div[3]/div/button'.</msg>
+<status status="PASS" endtime="20181024 17:06:08.859" starttime="20181024 17:06:08.563"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:08.864" starttime="20181024 17:06:08.860"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.864" starttime="20181024 17:06:08.563"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:08.864" starttime="20181024 17:06:08.562"></status>
+</kw>
+<kw name="Then error message &quot;Please try again or click on &quot;Forgot your password&quot;.&quot; should be displayed" library="loginKeywords">
+<kw name="Check text ${errorMessage} avilable on locator ${wrongCredentialError}" library="resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${expectedText}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:08.867" level="INFO">Verifying element 'xpath://*[@id="login-container"]/div[3]/div[5]/div/div[3]/span[1]/p' contains exact text 'Please try again or click on "Forgot your password".'.</msg>
+<status status="PASS" endtime="20181024 17:06:09.587" starttime="20181024 17:06:08.867"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:09.587" starttime="20181024 17:06:08.866"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:09.587" starttime="20181024 17:06:08.865"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181024 17:06:10.463" starttime="20181024 17:06:09.588"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" endtime="20181024 17:06:10.464" critical="yes" starttime="20181024 17:05:47.475"></status>
+</test>
+<test id="s1-t3" name="eCareVaultLoginWithGoogleAccount">
+<kw name="Given User opens eCareVault Login Page" library="loginKeywords">
+<kw name="Open eCareVault Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:10.468" level="INFO">Opening browser 'firefox' to base url 'http://staging.ecarevault.com/#/ecare-vault/login'.</msg>
+<status status="PASS" endtime="20181024 17:06:28.846" starttime="20181024 17:06:10.468"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20181024 17:06:32.358" starttime="20181024 17:06:28.847"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:32.359" starttime="20181024 17:06:32.359"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>eCareVault</arg>
+</arguments>
+<msg timestamp="20181024 17:06:32.365" level="INFO">Page title is 'eCareVault'.</msg>
+<status status="PASS" endtime="20181024 17:06:32.365" starttime="20181024 17:06:32.360"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:32.365" starttime="20181024 17:06:32.359"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:32.365" starttime="20181024 17:06:10.467"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:32.365" starttime="20181024 17:06:10.467"></status>
+</kw>
+<kw name="And User clicks on Login with Google" library="loginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_WITH_GOOGLE_ELEMENT}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:32.367" level="INFO">Clicking element 'id:gglCustomBtn'.</msg>
+<status status="PASS" endtime="20181024 17:06:32.806" starttime="20181024 17:06:32.366"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:32.806" starttime="20181024 17:06:32.366"></status>
+</kw>
+<kw name="And User move to the google sign in window" library="loginKeywords">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>locator=NEW</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:32.836" starttime="20181024 17:06:32.812"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:32.842" starttime="20181024 17:06:32.836"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:32.842" starttime="20181024 17:06:32.811"></status>
+</kw>
+<kw name="And User enters username ${googleUsername}" library="loginKeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${GOOGLE_LOGIN_USERNAME_FIELD}</arg>
+<arg>${googleUsername}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:32.850" level="INFO">Typing text 'sagar@jeavio.com' into text field 'id:identifierId'.</msg>
+<status status="PASS" endtime="20181024 17:06:34.095" starttime="20181024 17:06:32.849"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:34.095" starttime="20181024 17:06:32.848"></status>
+</kw>
+<kw name="And User clicks on Next Button" library="loginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${NEXT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:34.097" level="INFO">Clicking element 'id:identifierNext'.</msg>
+<status status="PASS" endtime="20181024 17:06:34.480" starttime="20181024 17:06:34.097"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:34.480" starttime="20181024 17:06:34.096"></status>
+</kw>
+<kw name="And User scroll down to element &quot;${GOOGLE_PASSWORD_FIELD}&quot;" library="loginKeywords">
+<kw name="scroll down to Element ${password_field}" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:35.352" starttime="20181024 17:06:34.482"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${elementName}</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:35.641" starttime="20181024 17:06:35.352"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:35.642" starttime="20181024 17:06:34.481"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:35.642" starttime="20181024 17:06:34.481"></status>
+</kw>
+<kw name="And User enters google password ${googlePassword}" library="loginKeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${GOOGLE_PASSWORD_FIELD}</arg>
+<arg>${google_Password}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:35.644" level="INFO">Typing text 'jeavio@1018' into text field 'name:password'.</msg>
+<status status="PASS" endtime="20181024 17:06:35.754" starttime="20181024 17:06:35.644"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:35.754" starttime="20181024 17:06:35.643"></status>
+</kw>
+<kw name="And User clicks on Next Button on Password Screen" library="loginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${PASSWORD_NEXT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:35.757" level="INFO">Clicking element 'id:passwordNext'.</msg>
+<status status="PASS" endtime="20181024 17:06:37.901" starttime="20181024 17:06:35.756"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:37.905" starttime="20181024 17:06:37.901"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:37.906" starttime="20181024 17:06:35.755"></status>
+</kw>
+<kw name="And User move to the ecare vault window" library="loginKeywords">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>Selects browser window matching ``locator``.</doc>
+<arguments>
+<arg>title:eCareVault</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:37.938" starttime="20181024 17:06:37.911"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>20 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:37.943" starttime="20181024 17:06:37.938"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:37.943" starttime="20181024 17:06:37.910"></status>
+</kw>
+<kw name="And user enter vault key &quot;${VAULTKEY}&quot;" library="loginKeywords">
+<kw name="Enter Vault" library="loginKeywords">
+<arguments>
+<arg>${vaultKey}</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${VAULTKEY_FIELD}</arg>
+<arg>${vaultKey}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:37.946" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" endtime="20181024 17:06:42.401" starttime="20181024 17:06:37.946"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:42.402" starttime="20181024 17:06:37.945"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:42.402" starttime="20181024 17:06:37.944"></status>
+</kw>
+<kw name="And user click on submit" library="loginKeywords">
+<kw name="Click Submit vault" library="loginKeywords">
+<kw name="Double Click Element" library="SeleniumLibrary">
+<doc>Double click element identified by ``locator``.</doc>
+<arguments>
+<arg>${VAULTKEY_SUBMIT_BUTTON}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:42.404" level="INFO">Double clicking element 'id:submit'.</msg>
+<status status="PASS" endtime="20181024 17:06:43.312" starttime="20181024 17:06:42.403"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>90 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:43.317" starttime="20181024 17:06:43.313"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:43.317" starttime="20181024 17:06:42.403"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:43.317" starttime="20181024 17:06:42.402"></status>
+</kw>
+<kw name="Then user name &quot;SAGAR&quot; should be displayed" library="loginKeywords">
+<kw name="Check element ${usernameOnDashboard} should contain text ${textValue}" library="resource">
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${textValue}</arg>
+</arguments>
+<msg timestamp="20181024 17:06:43.603" level="INFO">Element 'xpath://*[@id="step4_container"]/a/span/div' contains text 'SAGAR'.</msg>
+<status status="PASS" endtime="20181024 17:06:43.603" starttime="20181024 17:06:43.320"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:43.603" starttime="20181024 17:06:43.319"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>30 seconds</arg>
+</arguments>
+<status status="PASS" endtime="20181024 17:06:43.609" starttime="20181024 17:06:43.604"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:43.610" starttime="20181024 17:06:43.318"></status>
+</kw>
+<kw name="And Take Screenshot" library="resource">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>filename=eCareVault-screenshot-{index}.png</arg>
+</arguments>
+<msg timestamp="20181024 17:06:43.865" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="eCareVault-screenshot-3.png"&gt;&lt;img src="eCareVault-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20181024 17:06:43.865" starttime="20181024 17:06:43.616"></status>
+</kw>
+<status status="PASS" endtime="20181024 17:06:43.865" starttime="20181024 17:06:43.615"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181024 17:06:44.806" starttime="20181024 17:06:43.866"></status>
+</kw>
+<tags>
+<tag>regression</tag>
+<tag>smoke</tag>
+</tags>
+<status status="PASS" endtime="20181024 17:06:44.806" critical="yes" starttime="20181024 17:06:10.466"></status>
+</test>
+<doc>A sample test to see how robot works.
+Author: SAGAR K.
+This testsuit is functionally working.</doc>
+<status status="FAIL" endtime="20181024 17:06:44.809" starttime="20181024 17:04:57.953"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="2">regression</stat>
+<stat fail="1" pass="0">sanity</stat>
+<stat fail="1" pass="2">smoke</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="eCareVaultLogin" pass="2">eCareVaultLogin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
